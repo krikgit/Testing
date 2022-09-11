@@ -1,0 +1,81 @@
+<testsuite failures="2" name="com/ps/test/First_Test.feature" skipped="0" tests="3" time="3.923953"><testcase classname="com.ps.test.First_Test" name="Testing Get method" time="1.311588"><system-out>Given url 'https://reqres.in/api/user' .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+</system-out></testcase>
+<testcase classname="com.ps.test.First_Test" name="Testing Put method" time="1.305105"><failure message="status code was: 503, expected: 200, response time in milliseconds: 1018, url: https://reqres.in/api/users/3, response: &#xA;&lt;!DOCTYPE html&gt;&#xA;&#x9;&lt;html&gt;&#xA;&#x9;  &lt;head&gt;&#xA;&#x9;&#x9;&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34;&gt;&#xA;&#x9;&#x9;&lt;meta charset=&#34;utf-8&#34;&gt;&#xA;&#x9;&#x9;&lt;title&gt;Application Error&lt;/title&gt;&#xA;&#x9;&#x9;&lt;style media=&#34;screen&#34;&gt;&#xA;&#x9;&#x9;  html,body,iframe {&#xA;&#x9;&#x9;&#x9;margin: 0;&#xA;&#x9;&#x9;&#x9;padding: 0;&#xA;&#x9;&#x9;  }&#xA;&#x9;&#x9;  html,body {&#xA;&#x9;&#x9;&#x9;height: 100%;&#xA;&#x9;&#x9;&#x9;overflow: hidden;&#xA;&#x9;&#x9;  }&#xA;&#x9;&#x9;  iframe {&#xA;&#x9;&#x9;&#x9;width: 100%;&#xA;&#x9;&#x9;&#x9;height: 100%;&#xA;&#x9;&#x9;&#x9;border: 0;&#xA;&#x9;&#x9;  }&#xA;&#x9;&#x9;&lt;/style&gt;&#xA;&#x9;  &lt;/head&gt;&#xA;&#x9;  &lt;body&gt;&#xA;&#x9;&#x9;&lt;iframe src=&#34;//www.herokucdn.com/error-pages/application-error.html&#34;&gt;&lt;/iframe&gt;&#xA;&#x9;  &lt;/body&gt;&#xA;&#x9;&lt;/html&gt;&#xA;classpath:com/ps/test/First_Test.feature:29">Given url 'https://reqres.in/api/users/3' ................................. passed
+When method put ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 503, expected: 200, response time in milliseconds: 1018, url: https://reqres.in/api/users/3, response: 
+&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	  &lt;head&gt;
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+		&lt;meta charset="utf-8"&gt;
+		&lt;title&gt;Application Error&lt;/title&gt;
+		&lt;style media="screen"&gt;
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		&lt;/style&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+		&lt;iframe src="//www.herokucdn.com/error-pages/application-error.html"&gt;&lt;/iframe&gt;
+	  &lt;/body&gt;
+	&lt;/html&gt;
+classpath:com/ps/test/First_Test.feature:29&#xD;
+	at &lt;feature&gt;.: Then status 200 (classpath:com/ps/test/First_Test.feature:29:29)&#xD;
+
+* print response .......................................................... skipped
+</failure></testcase>
+<testcase classname="com.ps.test.First_Test" name="Testing Post method" time="1.30726"><failure message="status code was: 503, expected: 201, response time in milliseconds: 1021, url: https://reqres.in/api/user, response: &#xA;&lt;!DOCTYPE html&gt;&#xA;&#x9;&lt;html&gt;&#xA;&#x9;  &lt;head&gt;&#xA;&#x9;&#x9;&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34;&gt;&#xA;&#x9;&#x9;&lt;meta charset=&#34;utf-8&#34;&gt;&#xA;&#x9;&#x9;&lt;title&gt;Application Error&lt;/title&gt;&#xA;&#x9;&#x9;&lt;style media=&#34;screen&#34;&gt;&#xA;&#x9;&#x9;  html,body,iframe {&#xA;&#x9;&#x9;&#x9;margin: 0;&#xA;&#x9;&#x9;&#x9;padding: 0;&#xA;&#x9;&#x9;  }&#xA;&#x9;&#x9;  html,body {&#xA;&#x9;&#x9;&#x9;height: 100%;&#xA;&#x9;&#x9;&#x9;overflow: hidden;&#xA;&#x9;&#x9;  }&#xA;&#x9;&#x9;  iframe {&#xA;&#x9;&#x9;&#x9;width: 100%;&#xA;&#x9;&#x9;&#x9;height: 100%;&#xA;&#x9;&#x9;&#x9;border: 0;&#xA;&#x9;&#x9;  }&#xA;&#x9;&#x9;&lt;/style&gt;&#xA;&#x9;  &lt;/head&gt;&#xA;&#x9;  &lt;body&gt;&#xA;&#x9;&#x9;&lt;iframe src=&#34;//www.herokucdn.com/error-pages/application-error.html&#34;&gt;&lt;/iframe&gt;&#xA;&#x9;  &lt;/body&gt;&#xA;&#x9;&lt;/html&gt;&#xA;classpath:com/ps/test/First_Test.feature:37">Given url 'https://reqres.in/api/user' .................................... passed
+And request { "name": "Krishna Kamal","job": "Scrum Master"} .............. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 503, expected: 201, response time in milliseconds: 1021, url: https://reqres.in/api/user, response: 
+&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	  &lt;head&gt;
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+		&lt;meta charset="utf-8"&gt;
+		&lt;title&gt;Application Error&lt;/title&gt;
+		&lt;style media="screen"&gt;
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		&lt;/style&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+		&lt;iframe src="//www.herokucdn.com/error-pages/application-error.html"&gt;&lt;/iframe&gt;
+	  &lt;/body&gt;
+	&lt;/html&gt;
+classpath:com/ps/test/First_Test.feature:37&#xD;
+	at &lt;feature&gt;.: Then status 201 (classpath:com/ps/test/First_Test.feature:37:37)&#xD;
+
+* print response .......................................................... skipped
+</failure></testcase>
+</testsuite>
